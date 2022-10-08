@@ -1,0 +1,42 @@
+    <!-- destination -->
+    <main class="container destination__background">
+      <h1 class="destination__title">Hawaii</h1>
+
+      <section class="destination-card__group-wrapper">
+        <section class="grid grid--1x2 grid--1x3">
+          <section class="destination-card__wrapper">
+            <article class="card destination-card">
+              <h2 class="destination-card__heading">Friday</h2>
+              <section class="destination-card__subheading">
+                <h3 class="destination-card__subitem">Breakfast</h3>
+                <h3 class="destination-card__subitem">Lunch</h3>
+                <h3 class="destination-card__subitem">Dinner</h3>
+                <h3 class="destination-card__subitem">Snorkeling</h3>
+              </section>
+            </article>
+          </section>
+          <section class="destination-card__wrapper">
+            <article class="card destination-card">
+              <h2 class="destination-card__heading">Saturday</h2>
+              <section class="destination-card__subheading">
+                <h3 class="destination-card__subitem">Breakfast</h3>
+                <h3 class="destination-card__subitem">Lunch</h3>
+                <h3 class="destination-card__subitem">Dinner</h3>
+                <h3 class="destination-card__subitem">Snorkeling</h3>
+              </section>
+            </article>
+          </section>
+          <section class="destination-card__wrapper">
+            <article class="card destination-card">
+              <h2 class="destination-card__heading">Sunday</h2>
+              <section class="destination-card__subheading">
+                <h3 class="destination-card__subitem">Breakfast</h3>
+                <h3 class="destination-card__subitem">Lunch</h3>
+                <h3 class="destination-card__subitem">Dinner</h3>
+                <h3 class="destination-card__subitem">Snorkeling</h3>
+              </section>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
