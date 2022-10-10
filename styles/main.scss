@@ -1,0 +1,122 @@
+
+@use "./partials/variables";
+@use "./partials/mixins";
+
+/* btn */
+
+.btn {
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  font-size: 2.2rem;
+  outline: 0;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1.5rem 6.5rem;
+  display: inline-block;
+  &__hero {
+    background-color: variables.$color-secondary;
+    color: #fff;
+    font-weight: 100;
+    transition: 0.25s;
+    &:hover,
+    &:focus {
+      background-color: variables.$color-primary;
+      color: #fff;
+      font-weight: 100;
+    }
+  }
+}
+
+/* hero */
+.hero-group{
+  background-color: variables.$color-accent;
+}
+
+
+.hero {
+  @include mixins.container();
+  padding: 4rem 0 12rem 4rem;
+  /* justify-items: flex-end; */
+  justify-content: space-between;
+  font-weight: 600;
+  line-height: 1.3;
+
+  &__content {
+  max-width: 500px;
+  padding: 1rem 0;
+}
+  &__title {
+  margin-bottom: 4rem;
+}
+  &__subtitle {
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+  color: variables.$color-primary;
+}
+  &__image {
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 500px;
+}
+}
+
+
+/* main recommendation cards */
+.recommendation-group {
+  padding: 3rem;
+}
+
+.recommendation{
+  @include mixins.container();
+
+  &__title {
+  font-weight: 600;
+  padding: 3rem;
+}
+}
+
+
+.recommendation-card {
+  justify-items: end;
+  margin-left: 20rem;
+  margin-right: 10rem;
+
+  &__wrapper {
+  max-width: 300px;
+  min-width: 250px;
+}
+}
+
+
+.card__center-background-img {
+  /* center image */
+  @include mixins.flexed(row, center, center);
+}
+
+.card__bottom-right-title {
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .card__image,
+.card:focus .card__image {
+  transform: scale(1.02);
+  opacity: 0.5;
+}
+
+.card__title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+

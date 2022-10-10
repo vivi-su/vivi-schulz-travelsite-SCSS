@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*--------------- End of css reset------------- */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.2rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #335576;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header--white {
+  background-color: #fff;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem;
+}
+.nav__brand {
+  color: #335576;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__list-item {
+  margin: 0 2rem;
+  font-size: 1.6rem;
+}
+.nav__list-link {
+  color: #000;
+  padding: 0.5rem 0;
+}
+.nav__list-link:hover {
+  border-bottom: 4px solid #335576;
+}
+.nav__list-link--active {
+  border-bottom: 4px solid #db7a4e;
+}
+
+/* flex */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .flex--wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+/* grid */
+/* .grid{
+    display:grid;
+}
+
+@media screen and (min-width:768px){
+    .grid--1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+/* card */
+.card {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 1.5rem;
+  transition: 0.25s;
+}
+.card:hover, .card:focus {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+  transform: translateX(5px) translateY(-5px);
+}
+
+/* footer */
+.footer-background {
+  padding: 4rem;
+  background-color: #fefaf5;
+}
+
+.footer-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.footer__subtitle {
+  font-size: 1rem;
+  color: #db7a4e;
+  margin-bottom: 1rem;
+}
+.footer__icon-group {
+  padding-top: 1.2rem;
+}
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 2rem;
+}
+.footer__info {
+  font-size: 1.5rem;
+  color: #335576;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+  }
+}
+.footer__subcontent {
+  padding-right: 3rem;
+}/*# sourceMappingURL=global.css.map */
