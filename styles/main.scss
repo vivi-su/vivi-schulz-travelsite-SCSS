@@ -29,45 +29,42 @@
 }
 
 /* hero */
-.hero-background{
+.hero-background {
   background-color: variables.$color-accent;
 }
-
 
 .hero {
   @include mixins.container();
   @include mixins.flexed(column, center, center);
   /* justify-items: flex-end; */
-  
+
   padding: 4rem 0 8rem 4rem;
   font-weight: 600;
   line-height: 1.3;
 
   &__content {
-  max-width: 500px;
-  padding: 5rem 0;
-}
+    max-width: 500px;
+    padding: 5rem 0;
+  }
   &__title {
-  margin-bottom: 4rem;
-}
+    margin-bottom: 4rem;
+  }
   &__subtitle {
-  font-weight: 300;
-  font-size: 1.6rem;
-  margin-bottom: 5rem;
-  color: variables.$color-primary;
-}
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    color: variables.$color-primary;
+  }
   &__image {
-  padding: 5rem 2rem;
-  width: 100%;
-  max-width: 500px;
-}
-}
+    padding: 5rem 2rem;
+    width: 100%;
+    max-width: 500px;
+  }
 
-@media screen and (min-width: 768px) {
-  .hero {
-  @include mixins.container();
-  @include mixins.flexed(row, space-around, center);
-}
+  @media (min-width: 768px) {
+    @include mixins.container();
+    @include mixins.flexed(row, space-around, center);
+  }
 }
 
 /* main recommendation cards */
@@ -75,35 +72,32 @@
   padding: 3rem;
 }
 
-.recommendation{
+.recommendation {
   @include mixins.container();
 
   &__title {
-  font-weight: 600;
-  padding: 3rem;
+    font-weight: 600;
+    padding: 3rem 8rem;
+  
+  }
 }
-}
-
 
 .recommendation-card {
-  // justify-items: end;
-@include mixins.flexed(column, center, center);
+
+  @include mixins.flexed(column, center, center);
 
   margin-left: 20rem;
   margin-right: 10rem;
 
   &__wrapper {
-  max-width: 300px;
-  min-width: 250px;
-}
-}
+    max-width: 300px;
+    min-width: 250px;
+  }
 
-@media screen and (min-width: 768px) {
-  .recommendation-card{
+  @media (min-width: 768px){
     @include mixins.flexed(row, space-around, center);
   }
 }
-
 
 
 .card__center-background-img {

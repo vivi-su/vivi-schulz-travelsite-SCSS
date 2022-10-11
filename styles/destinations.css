@@ -12,15 +12,45 @@
   background-image: url(../assets/images/Images/hawaii.jpg);
   height: 1500px;
 }
+@media (min-width: 768px) {
+  .destination__background--hawaii {
+    height: 1100px;
+  }
+}
+@media (min-width: 1024px) {
+  .destination__background--hawaii {
+    height: 650px;
+  }
+}
 
 .destination__background--iceland {
   background-image: url(../assets/images/Images/iceland.jpg);
   height: 1500px;
 }
+@media (min-width: 768px) {
+  .destination__background--iceland {
+    height: 1100px;
+  }
+}
+@media (min-width: 1024px) {
+  .destination__background--iceland {
+    height: 650px;
+  }
+}
 
 .destination__background--greece {
   background-image: url(../assets/images/Images/greece.jpg);
   height: 1500px;
+}
+@media (min-width: 768px) {
+  .destination__background--greece {
+    height: 1100px;
+  }
+}
+@media (min-width: 1024px) {
+  .destination__background--greece {
+    height: 650px;
+  }
 }
 
 .destination__title {
@@ -30,28 +60,6 @@
   padding: 4rem;
 }
 
-@media screen and (min-width: 768px) {
-  .destination__background--hawaii {
-    height: 1100px;
-  }
-  .destination__background--iceland {
-    height: 1100px;
-  }
-  .destination__background--greece {
-    height: 1100px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .destination__background--hawaii {
-    height: 650px;
-  }
-  .destination__background--iceland {
-    height: 650px;
-  }
-  .destination__background--greece {
-    height: 650px;
-  }
-}
 /* destination itinerary cards */
 .destination-card-group {
   max-width: 900px;
@@ -61,8 +69,7 @@
   justify-content: center;
   align-items: center;
 }
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .destination-card-group {
     display: flex;
     flex-direction: row;
@@ -71,6 +78,7 @@
     flex-wrap: wrap;
   }
 }
+
 .destination-card {
   margin: 3rem auto 0;
   max-width: 500px;

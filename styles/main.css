@@ -59,8 +59,7 @@
   width: 100%;
   max-width: 500px;
 }
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero {
     max-width: 1280px;
     width: 100%;
@@ -71,6 +70,7 @@
     align-items: center;
   }
 }
+
 /* main recommendation cards */
 .recommendation-group {
   padding: 3rem;
@@ -83,7 +83,7 @@
 }
 .recommendation__title {
   font-weight: 600;
-  padding: 3rem;
+  padding: 3rem 8rem;
 }
 
 .recommendation-card {
@@ -98,8 +98,7 @@
   max-width: 300px;
   min-width: 250px;
 }
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .recommendation-card {
     display: flex;
     flex-direction: row;
@@ -107,6 +106,7 @@
     align-items: center;
   }
 }
+
 .card__center-background-img {
   /* center image */
   display: flex;
