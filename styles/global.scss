@@ -2,8 +2,6 @@
 @use "./partials/variables";
 @use "./partials/mixins";
 
-
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -118,19 +116,16 @@ li {
   @include mixins.container();
 }
 
-.footer-flex{
+.footer-flex {
   @include mixins.flexed(column, center, flex-start);
 
-  @media (min-width: 768px){
+  @include mq(medium) {
     @include mixins.flexed(row, space-around, center);
   }
-
 }
 
-
 .footer {
-  margin:3rem 1rem;
-
+  margin: 3rem 1rem;
 
   &__title {
     font-size: 2.4rem;
@@ -155,20 +150,14 @@ li {
     color: variables.$color-primary;
   }
   &__subcontent {
-  padding-right: 3rem;
-}
-  
-}
-
-
-
-
-.footer__content {
-    
-  @include mixins.flexed(column,center, flex-start);
-
-  @media (min-width: 768px){
-    @include mixins.flexed(row, flex-start, center);
+    padding-right: 3rem;
   }
 }
 
+.footer__content {
+  @include mixins.flexed(column, center, flex-start);
+
+  @include mq(medium) {
+    @include mixins.flexed(row, flex-start, center);
+  }
+}

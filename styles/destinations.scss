@@ -8,43 +8,39 @@
   background-position: center right;
   background-size: cover;
   width: 100%;
- 
 }
-
-
 
 .destination__background--hawaii {
   background-image: url(../assets/images/Images/hawaii.jpg);
-   height: 1500px;
-   @media (min-width: 768px){
+  height: 1500px;
+  @include mq(medium) {
     height: 1100px;
-   }
-    @media (min-width: 1024px){
+  }
+  @include mq(large) {
     height: 650px;
-   }
-
+  }
 }
 
 .destination__background--iceland {
   background-image: url(../assets/images/Images/iceland.jpg);
   height: 1500px;
-  @media (min-width: 768px){
+  @include mq(medium) {
     height: 1100px;
-   }
-    @media (min-width: 1024px){
+  }
+  @include mq(large) {
     height: 650px;
-   }
+  }
 }
 
 .destination__background--greece {
   background-image: url(../assets/images/Images/greece.jpg);
   height: 1500px;
-  @media (min-width: 768px){
+  @include mq(medium) {
     height: 1100px;
-   }
-    @media (min-width: 1024px){
+  }
+  @include mq(large) {
     height: 650px;
-   }
+  }
 }
 
 .destination__title {
@@ -54,27 +50,22 @@
   padding: 4rem;
 }
 
-
-
-
-
 /* destination itinerary cards */
 
-.destination-card-group{
-  max-width:900px;
-  margin:0 auto;
+.destination-card-group {
+  max-width: 900px;
+  margin: 0 auto;
   @include mixins.flexed(column, center, center);
 
-  @media (min-width: 768px){
+  @include mq(medium) {
     @include mixins.flexed(row, space-around, center);
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
-
 .destination-card {
   margin: 3rem auto 0;
-  max-width:500px;
+  max-width: 500px;
   &__heading {
     color: black;
     font-size: 2rem;

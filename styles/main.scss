@@ -36,7 +36,7 @@
 .hero {
   @include mixins.container();
   @include mixins.flexed(column, center, center);
-  /* justify-items: flex-end; */
+
 
   padding: 4rem 0 8rem 4rem;
   font-weight: 600;
@@ -61,7 +61,7 @@
     max-width: 500px;
   }
 
-  @media (min-width: 768px) {
+  @include mq(medium) {
     @include mixins.container();
     @include mixins.flexed(row, space-around, center);
   }
@@ -94,7 +94,7 @@
     min-width: 250px;
   }
 
-  @media (min-width: 768px){
+  @include mq(medium) {
     @include mixins.flexed(row, space-around, center);
   }
 }
